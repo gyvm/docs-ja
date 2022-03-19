@@ -11,46 +11,46 @@ import type { Member } from './Member'
 <template>
   <div class="TeamPage">
     <TeamHero>
-      <template #title>Meet the Team</template>
+      <template #title>チーム紹介</template>
       <template #lead
         >The development of Vue and its ecosystem is guided by an international
         team, some of whom have chosen to be
-        <span class="nowrap">featured below.</span></template
+        <span class="nowrap">featured below.</span>
+        Vueとそのエコシステムの開発は国際チームによって主導されています。メンバーの一部を以下に記載します。
+        </template
       >
 
       <template #action>
         <VTLink
           href="https://github.com/vuejs/governance/blob/master/Team-Charter.md"
-          >Learn more about teams</VTLink
+          >Learn more about teams / チームについてもっと知る</VTLink
         >
       </template>
     </TeamHero>
 
     <TeamList :members="membersCoreData">
-      <template #title>Core Team Members</template>
+      <template #title>コアチームメンバー</template>
       <template #lead
-        >Core team members are those who are actively involved in the
-        maintenance of one or more core projects. They have made significant
-        contributions to the Vue ecosystem, with a long term commitment to the
-        success of the project and its users.</template
+        >コアチームメンバーは1つから複数のプロジェクトを積極的にメンテナンスしています。
+        彼らは Vue エコシステムに有意な貢献をしていて、プロジェクトとユーザの成功のために長い期間コミットしています。
+        </template
       >
     </TeamList>
 
     <TeamList :members="membersEmeritiData as Member[]">
-      <template #title>Core Team Emeriti</template>
+      <template #title>名誉コアチーム</template>
       <template #lead
-        >Here we honor some no-longer-active core team members who have made
-        valuable contributions in the past.</template
+        >こちらは私達が誇る過去に価値のある貢献をした元コアチームメンバーです。
+        </template
       >
     </TeamList>
 
     <TeamList :members="membersPartnerData as Member[]">
-      <template #title>Community Partners</template>
+      <template #title>コミュニティーパートナー</template>
       <template #lead
-        >Some members of the Vue community have so enriched it, that they
-        deserve special mention. We've developed a more intimate relationship
-        with these key partners, often coordinating with them on upcoming
-        features and news.</template
+        >Vue コミュニテーのメンバーはコミュニティーを発展させましたので、特筆に値します。
+        私達は主要なパートナーとより親密に開発しています。頻繁に今後の機能やニュースを決定します。
+        </template
       >
     </TeamList>
   </div>
